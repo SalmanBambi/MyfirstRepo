@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header - Flexbox */
 header {
     display: flex;
     justify-content: space-between;
@@ -30,10 +30,16 @@ header {
     color: #273c35;
 }
 
+/* Navigation - Flexbox */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 nav a {
     text-decoration: none;
     color: #333333;
-    margin: 0 15px;
     font-size: 16px;
 }
 
@@ -46,22 +52,22 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* Hero Section - ID Selector */
+/* Hero Section - Grid */
 #home {
     background-color: #f1f5f0;
 }
 
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 40px;
     padding: 80px 8%;
     min-height: 500px;
 }
 
 .hero-text {
-    width: 50%;
+    width: 100%;
 }
 
 .small-title {
@@ -85,7 +91,7 @@ nav a:hover {
 }
 
 .hero-image {
-    width: 45%;
+    width: 100%;
 }
 
 .hero-image img {
@@ -95,6 +101,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Shop Button */
 .btn {
     display: inline-block;
     background-color: #315747;
@@ -121,14 +128,14 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+/* Books - CSS Grid */
 .book-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
 .book-card {
-    width: 25%;
     padding: 15px;
     border: 1px solid #eeeeee;
     background-color: white;
@@ -197,6 +204,13 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
+/* Form - Flexbox */
+.contact form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .contact input {
     padding: 14px;
     width: 280px;
@@ -223,7 +237,7 @@ footer {
     padding: 25px;
 }
 
-/* Responsive Design */
+/* Tablet Responsive */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -231,21 +245,14 @@ footer {
     }
 
     nav {
-        text-align: center;
-    }
-
-    nav a {
-        margin: 0 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
     .hero {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         padding: 50px 6%;
-    }
-
-    .hero-text,
-    .hero-image {
-        width: 100%;
     }
 
     .hero h1 {
@@ -253,21 +260,31 @@ footer {
     }
 
     .book-container {
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .book-card {
-        width: calc(50% - 13px);
+    .featured {
+        padding: 60px 6%;
     }
 }
 
+/* Mobile Responsive */
 @media (max-width: 480px) {
-    .book-card {
-        width: 100%;
+    .book-container {
+        grid-template-columns: 1fr;
     }
 
-    .contact input {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .contact form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact input,
+    .contact button {
         width: 100%;
-        margin-bottom: 10px;
     }
 }

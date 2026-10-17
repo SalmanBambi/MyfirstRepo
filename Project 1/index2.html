@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Media & Info - Book Store</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Book Store</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media & Info</a>
+            <a href="#books">Books</a>
+            <a href="#information">Information</a>
+        </nav>
+
+        <div class="cart">🛒 Cart</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p class="small-title">WELCOME TO BOOK STORE</p>
+        <h1>Books, Videos & Audiobooks</h1>
+        <p>
+            Explore our exciting collection of books,
+            videos, audio stories and useful information.
+        </p>
+    </section>
+
+    <!-- Media Section -->
+    <section class="media-section">
+
+        <p class="small-title">EXPLORE OUR MEDIA</p>
+        <h2>Latest Videos & Audiobooks</h2>
+
+        <div class="media-grid">
+
+            <!-- Video -->
+            <div class="media-card">
+                <h3>The Descendant of Hope</h3>
+                <p>Featured Video</p>
+
+                <video controls poster="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=700">
+                    <source
+                      src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <p>
+                    Explore inspiring stories and enjoy
+                    our latest featured video.
+                </p>
+                <small>Sample video for demonstration.</small>
+            </div>
+
+            <!-- Audio -->
+            <div class="media-card">
+                <h3>Latest Audiobook</h3>
+                <p>Listen to Your Favorite Stories</p>
+
+                <img
+                  src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=700"
+                  alt="Audiobook Collection">
+
+                <audio controls>
+                    <source
+                      src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                      type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+
+                <p>
+                    Enjoy audio content and discover
+                    the world of storytelling.
+                </p>
+                <small>Sample audio for demonstration.</small>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="books-section">
+
+        <p class="small-title">OUR COLLECTION</p>
+        <h2>Best Selling Books</h2>
+
+        <div class="book-grid">
+
+            <div class="book-card">
+                <img
+                  src="https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
+                  alt="To Kill a Mockingbird">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Harper Lee</p>
+                <span>$15.00</span>
+            </div>
+
+            <div class="book-card">
+                <img
+                  src="https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+                  alt="1984">
+                <h3>1984</h3>
+                <p>George Orwell</p>
+                <span>$18.00</span>
+            </div>
+
+            <div class="book-card">
+                <img
+                  src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+                  alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
+                <p>F. Scott Fitzgerald</p>
+                <span>$20.00</span>
+            </div>
+
+            <div class="book-card">
+                <img
+                  src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+                  alt="Pride and Prejudice">
+                <h3>Pride and Prejudice</h3>
+                <p>Jane Austen</p>
+                <span>$16.00</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lists Section -->
+    <section id="information" class="information">
+
+        <h2>Book Information</h2>
+
+        <div class="list-container">
+
+            <!-- Unordered List -->
+            <div class="list-box">
+                <h3>Popular Book Categories</h3>
+
+                <ul>
+                    <li>Fantasy Books</li>
+                    <li>Science Fiction</li>
+                    <li>Romance Novels</li>
+                    <li>History Books</li>
+                    <li>Educational Books</li>
+                </ul>
+            </div>
+
+            <!-- Ordered List -->
+            <div class="list-box">
+                <h3>How to Order Books</h3>
+
+                <ol>
+                    <li>Visit our bookstore website</li>
+                    <li>Select your favorite book</li>
+                    <li>Check the book details</li>
+                    <li>Add the book to your cart</li>
+                    <li>Complete your purchase</li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Data Table -->
+    <section class="table-section">
+
+        <h2>Book Price Information</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>To Kill a Mockingbird</td>
+                        <td>Harper Lee</td>
+                        <td>Fiction</td>
+                        <td>$15.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>1984</td>
+                        <td>George Orwell</td>
+                        <td>Science Fiction</td>
+                        <td>$18.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Great Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>Classic</td>
+                        <td>$20.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pride and Prejudice</td>
+                        <td>Jane Austen</td>
+                        <td>Romance</td>
+                        <td>$16.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Book Store. All Rights Reserved.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header - Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #273c35;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #315747;
+}
+
+/* Attribute Selector */
+nav a[href="register.html"] {
+    font-weight: bold;
+}
+
+.cart {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #f1f5f0;
+    padding: 65px 8%;
+}
+
+.small-title {
+    font-size: 14px;
+    color: #648474;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    color: #233e34;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Main Registration Section */
+.register-section {
+    padding: 80px 8%;
+}
+
+/* CSS Grid Layout */
+.register-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 45px;
+    align-items: start;
+}
+
+/* Left Side */
+.register-info {
+    background-color: #f1f5f0;
+    padding: 30px;
+    border: 1px solid #e2e9e1;
+    border-radius: 6px;
+}
+
+.register-info img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.register-info h2 {
+    font-size: 28px;
+    color: #233e34;
+    margin-bottom: 15px;
+}
+
+.register-info h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #233e34;
+}
+
+.register-info ul {
+    padding-left: 25px;
+}
+
+.register-info li {
+    margin-bottom: 12px;
+}
+
+/* Pseudo-element */
+.register-info li::marker {
+    color: #315747;
+}
+
+/* Form Box */
+.form-box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form-box h2 {
+    font-size: 32px;
+    color: #233e34;
+    margin-bottom: 10px;
+}
+
+.form-box > p {
+    margin-bottom: 25px;
+    color: #666666;
+}
+
+/* Pseudo-element */
+.form-box h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #315747;
+    margin-top: 12px;
+}
+
+/* Fieldset */
+fieldset {
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 19px;
+    font-weight: bold;
+    color: #315747;
+    padding: 0 10px;
+}
+
+/* Form Fields - Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    min-width: 0;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Child Combinator */
+.form-group > input,
+.form-group > select,
+.form-group > textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* Attribute Selectors */
+input[type="email"] {
+    background-color: #fafdfb;
+}
+
+input[type="password"] {
+    letter-spacing: 1px;
+}
+
+input[type="color"] {
+    height: 48px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    accent-color: #315747;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    font-size: 13px;
+}
+
+/* Focus Pseudo-class */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #648474;
+    outline-offset: 1px;
+    border-color: #315747;
+}
+
+/* Valid Pseudo-class */
+input:valid:not([type="checkbox"]):not([type="radio"]),
+select:valid {
+    border-color: #75a184;
+}
+
+/* Invalid Pseudo-class */
+input:invalid:not(:placeholder-shown),
+select:invalid:not(:focus) {
+    border-color: #c46b6b;
+}
+
+/* Readonly Pseudo-class */
+input:read-only {
+    background-color: #edf3ed;
+    color: #315747;
+}
+
+/* Disabled Pseudo-class */
+input:disabled {
+    background-color: #eeeeee;
+    color: #999999;
+    cursor: not-allowed;
+}
+
+/* Placeholder Pseudo-element */
+input::placeholder,
+textarea::placeholder {
+    color: #999999;
+    font-style: italic;
+}
+
+/* Radio and Checkbox - Flexbox */
+.choice-group {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.choice-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Checked Pseudo-class */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    accent-color: #315747;
+}
+
+/* Terms */
+.terms {
+    margin-top: 15px;
+}
+
+.terms label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Buttons - Flexbox */
+.form-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.form-buttons button {
+    padding: 14px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #315747;
+    color: white;
+    border: 2px solid #315747;
+    flex: 1;
+}
+
+/* Hover Pseudo-class */
+.submit-btn:hover {
+    background-color: #233e34;
+}
+
+/* Reset Button */
+.reset-btn {
+    background-color: white;
+    color: #315747;
+    border: 2px solid #315747;
+}
+
+.reset-btn:hover {
+    background-color: #f1f5f0;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-text a {
+    color: #315747;
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Combinator */
+legend + .form-grid {
+    margin-top: 10px;
+}
+
+/* General Sibling Combinator */
+.form-group ~ .terms {
+    padding-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #233e34;
+    color: white;
+    padding: 25px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 900px) {
+
+    .register-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .register-section {
+        padding: 40px 5%;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .choice-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}

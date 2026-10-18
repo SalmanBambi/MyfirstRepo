@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Book Store</title>
+
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Book Store</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media & Info</a>
+            <a href="register.html" class="active">Register</a>
+        </nav>
+
+        <div class="cart">🛒 Cart</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p class="small-title">JOIN OUR BOOK COMMUNITY</p>
+
+        <h1>Create Your Account</h1>
+
+        <p>
+            Register today and explore your favorite
+            books, audiobooks and special offers.
+        </p>
+    </section>
+
+    <!-- Registration Section -->
+    <main class="register-section">
+
+        <div class="register-container">
+
+            <!-- Left Side -->
+            <aside class="register-info">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
+                    alt="Collection of Books">
+
+                <h2>Welcome to Book Store</h2>
+
+                <p>
+                    Join thousands of readers and discover
+                    exciting books from your favorite authors.
+                </p>
+
+                <h3>Why Join Us?</h3>
+
+                <ul>
+                    <li>Explore thousands of books</li>
+                    <li>Get exclusive discounts</li>
+                    <li>Discover new authors</li>
+                    <li>Enjoy personalized recommendations</li>
+                </ul>
+
+            </aside>
+
+            <!-- Right Side Form -->
+            <div class="form-box">
+
+                <h2>Register Now</h2>
+
+                <p>
+                    Fill out the form below to create
+                    your account.
+                </p>
+
+                <form action="#" method="get">
+
+                    <!-- Text and Email -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="fullname">
+                                    Full Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullname"
+                                    name="fullname"
+                                    placeholder="Enter full name"
+                                    minlength="3"
+                                    maxlength="50"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter email address"
+                                    required>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="password">
+                                    Password *
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Minimum 8 characters"
+                                    minlength="8"
+                                    maxlength="20"
+                                    required>
+                            </div>
+
+                            <!-- Date -->
+                            <div class="form-group">
+                                <label for="dob">
+                                    Date of Birth *
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="dob"
+                                    name="dob"
+                                    max="2026-10-17"
+                                    required>
+                            </div>
+
+                            <!-- URL -->
+                            <div class="form-group">
+                                <label for="website">
+                                    Favorite Author Website
+                                </label>
+
+                                <input
+                                    type="url"
+                                    id="website"
+                                    name="website"
+                                    placeholder="https://example.com">
+                            </div>
+
+                            <!-- Number -->
+                            <div class="form-group">
+                                <label for="age">
+                                    Age *
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="age"
+                                    name="age"
+                                    min="13"
+                                    max="100"
+                                    placeholder="Enter age"
+                                    required>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Reading Preferences -->
+                    <fieldset>
+                        <legend>Reading Preferences</legend>
+
+                        <div class="form-grid">
+
+                            <!-- Color -->
+                            <div class="form-group">
+                                <label for="color">
+                                    Favorite Color
+                                </label>
+
+                                <input
+                                    type="color"
+                                    id="color"
+                                    name="color"
+                                    value="#315747">
+                            </div>
+
+                            <!-- Time -->
+                            <div class="form-group">
+                                <label for="time">
+                                    Preferred Reading Time
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="time"
+                                    name="time"
+                                    value="18:00">
+                            </div>
+
+                            <!-- Range -->
+                            <div class="form-group full-width">
+                                <label for="reading">
+                                    Reading Interest Level
+                                </label>
+
+                                <input
+                                    type="range"
+                                    id="reading"
+                                    name="reading"
+                                    min="1"
+                                    max="10"
+                                    value="5">
+                                <small>1 = Beginner, 10 = Book Lover</small>
+                            </div>
+
+                            <!-- Select -->
+                            <div class="form-group">
+                                <label for="genre">
+                                    Favorite Book Genre *
+                                </label>
+
+                                <select
+                                    id="genre"
+                                    name="genre"
+                                    required>
+
+                                    <option value="">
+                                        Select Genre
+                                    </option>
+
+                                    <option value="fiction">
+                                        Fiction
+                                    </option>
+
+                                    <option value="fantasy">
+                                        Fantasy
+                                    </option>
+
+                                    <option value="romance">
+                                        Romance
+                                    </option>
+
+                                    <option value="history">
+                                        History
+                                    </option>
+
+                                    <option value="education">
+                                        Education
+                                    </option>
+
+                                </select>
+                            </div>
+
+                            <!-- Readonly -->
+                            <div class="form-group">
+                                <label for="membership">
+                                    Membership Type
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="membership"
+                                    name="membership"
+                                    value="Free Member"
+                                    readonly>
+                            </div>
+
+                        </div>
+
+                        <!-- Radio -->
+                        <div class="form-group">
+                            <label>Preferred Book Format *</label>
+
+                            <div class="choice-group">
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="format"
+                                        value="printed"
+                                        checked
+                                        required>
+                                    Printed Books
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="format"
+                                        value="ebook">
+                                    E-Books
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="format"
+                                        value="audio">
+                                    Audiobooks
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-group">
+                            <label>Interested Categories</label>
+
+                            <div class="choice-group">
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="novels"
+                                        checked>
+                                    Novels
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="science">
+                                    Science
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="history">
+                                    History
+                                </label>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Additional Information -->
+                    <fieldset>
+                        <legend>Additional Information</legend>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label for="message">
+                                Tell Us About Your Reading Interests
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                minlength="10"
+                                maxlength="300"
+                                placeholder="Tell us about your favorite books..."></textarea>
+                        </div>
+
+                        <!-- File -->
+                        <div class="form-group">
+                            <label for="profile">
+                                Upload Profile Picture
+                            </label>
+
+                            <input
+                                type="file"
+                                id="profile"
+                                name="profile"
+                                accept="image/*">
+                        </div>
+
+                        <!-- Disabled -->
+                        <div class="form-group">
+                            <label for="discount">
+                                Discount Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="discount"
+                                name="discount"
+                                value="Coming Soon"
+                                disabled>
+                        </div>
+
+                        <!-- Required Checkbox -->
+                        <div class="terms">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="terms"
+                                    required>
+
+                                I agree to the Terms and Conditions *
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Buttons -->
+                    <div class="form-buttons">
+
+                        <button type="submit" class="submit-btn">
+                            Create Account
+                        </button>
+
+                        <button type="reset" class="reset-btn">
+                            Reset Form
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <p class="login-text">
+                    Already have an account?
+                    <a href="index.html">Back to Home</a>
+                </p>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Book Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

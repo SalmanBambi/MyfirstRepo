@@ -1,0 +1,393 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header - Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #273c35;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #6c8b7b;
+}
+
+.cart {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Hero - Background Image */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 95px 8%;
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 45, 35, 0.85),
+            rgba(20, 45, 35, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #7ba38c;
+    margin-bottom: 15px;
+}
+
+.hero .small-title {
+    color: #d8e7dc;
+}
+
+/* Media Section */
+.media-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.media-section h2 {
+    font-size: 36px;
+    color: #233e34;
+    margin-bottom: 40px;
+}
+
+/* Media - CSS Grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* Box Model */
+.media-card {
+    position: relative;
+    min-width: 0;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background-color: #f7faf7;
+    border-radius: 5px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.media-card h3 {
+    color: #233e34;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.media-card p {
+    margin-bottom: 15px;
+}
+
+.media-card video {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.media-card img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.media-card audio {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.media-card small {
+    color: #777777;
+}
+
+/* Books Section */
+.books-section {
+    padding: 75px 8%;
+    text-align: center;
+    background-color: #f1f5f0;
+}
+
+.books-section h2 {
+    font-size: 36px;
+    color: #233e34;
+    margin-bottom: 40px;
+}
+
+/* Books - CSS Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    min-width: 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    border-color: #315747;
+}
+
+.book-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.book-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.book-card p {
+    color: #777777;
+    margin-bottom: 8px;
+}
+
+.book-card span {
+    color: #315747;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Information Section */
+.information {
+    padding: 80px 8%;
+}
+
+.information h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #233e34;
+    margin-bottom: 40px;
+}
+
+/* Lists - Flexbox */
+.list-container {
+    display: flex;
+    gap: 30px;
+}
+
+.list-box {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    background-color: #f7faf7;
+}
+
+.list-box h3 {
+    color: #233e34;
+    margin-bottom: 20px;
+}
+
+.list-box ul,
+.list-box ol {
+    padding-left: 25px;
+}
+
+.list-box li {
+    margin-bottom: 12px;
+}
+
+/* Float Property Example */
+.list-box ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+/* Table Section */
+.table-section {
+    padding: 70px 8%;
+    background-color: #f1f5f0;
+}
+
+.table-section h2 {
+    font-size: 34px;
+    color: #233e34;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Overflow Property */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #315747;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f7faf7;
+}
+
+tr:hover {
+    background-color: #e8f0ea;
+}
+
+/* Float Property */
+footer a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    display: flow-root;
+    background-color: #233e34;
+    color: white;
+    padding: 25px 8%;
+}
+
+footer p {
+    float: left;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .list-container {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .media-section,
+    .books-section,
+    .information,
+    .table-section {
+        padding: 50px 5%;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-card {
+        padding: 15px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p,
+    footer a {
+        float: none;
+        display: block;
+    }
+}
